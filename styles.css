@@ -54,6 +54,34 @@ body.spa {
   --line: #d7e5df;
 }
 
+body.barber {
+  --bg: #120f0d;
+  --surface: #1e1915;
+  --surface-strong: #2a211b;
+  --text: #fff6e8;
+  --muted: #cbbda9;
+  --accent: #d68a38;
+  --accent-strong: #a85b1e;
+  --accent-soft: #f2c66d;
+  --accent-two: #b53f32;
+  --line: #3a3028;
+  --shadow: 0 22px 54px rgba(0, 0, 0, 0.34);
+}
+
+body.dental {
+  --bg: #f4fbff;
+  --surface: #ffffff;
+  --surface-strong: #e5f5fb;
+  --text: #10222c;
+  --muted: #5d7480;
+  --accent: #1b91c9;
+  --accent-strong: #126388;
+  --accent-soft: #b8f3e6;
+  --accent-two: #22b4a0;
+  --line: #d5e7ef;
+  --shadow: 0 18px 44px rgba(16, 60, 80, 0.12);
+}
+
 body.shop {
   --bg: #f6f7fb;
   --surface: #ffffff;
@@ -78,6 +106,72 @@ body.index-page {
   --accent-soft: #e5a94f;
   --accent-two: #c85542;
   --line: #dfd8c9;
+}
+
+body.barber .topbar {
+  background: rgba(18, 15, 13, 0.9);
+  border-bottom-color: var(--line);
+}
+
+body.barber .nav-links,
+body.barber .brand-name small {
+  color: #d7c4ac;
+}
+
+body.barber .nav-links a:hover,
+body.barber .nav-links a.active {
+  color: #fff6e8;
+}
+
+body.barber .card,
+body.barber .service-card,
+body.barber .form-panel,
+body.barber .contact-panel,
+body.barber .checkout-panel,
+body.barber .auth-panel {
+  background:
+    linear-gradient(135deg, rgba(214, 138, 56, 0.09), transparent 34%),
+    var(--surface);
+}
+
+body.barber .field input,
+body.barber .field select,
+body.barber .field textarea {
+  background: #fff8ef;
+  color: #1e1915;
+  border-color: #574537;
+}
+
+body.barber .band {
+  background:
+    repeating-linear-gradient(135deg, rgba(214, 138, 56, 0.08) 0 10px, transparent 10px 28px),
+    var(--surface-strong);
+}
+
+body.barber .media-note {
+  background: rgba(30, 25, 21, 0.9);
+  border-color: rgba(214, 138, 56, 0.28);
+}
+
+body.barber .media-note span,
+body.barber .media-note strong {
+  color: #fff6e8;
+}
+
+body.barber .media-note .icon {
+  color: var(--accent);
+}
+
+body.dental .band {
+  background:
+    radial-gradient(circle at 12% 20%, rgba(34, 180, 160, 0.18), transparent 22%),
+    linear-gradient(135deg, #e8f8ff, #eefcf8);
+}
+
+body.dental .service-card {
+  background:
+    linear-gradient(180deg, rgba(34, 180, 160, 0.09), transparent 46%),
+    var(--surface);
 }
 
 img,

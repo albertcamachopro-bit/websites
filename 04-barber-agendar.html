@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distrito Barber | Reservar turno</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="barber" data-page="barber-agendar">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="04-barber-home.html" aria-label="Distrito Barber">
+        <span class="brand-mark"><i data-lucide="scissors" class="icon"></i></span>
+        <span class="brand-name">Distrito Barber <small>Cortes y rituales</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Barbería">
+        <a href="04-barber-home.html" data-nav="barber-home">Inicio</a>
+        <a href="04-barber-agendar.html" data-nav="barber-agendar">Reservar turno</a>
+        <a href="04-barber-contacto.html" data-nav="barber-contacto">Contacto</a>
+        <a class="btn btn-primary nav-action" href="04-barber-agendar.html">
+          <i data-lucide="calendar-clock" class="icon"></i> Reservar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="tagline"><i data-lucide="calendar-clock" class="icon"></i> Reserva de turno</div>
+            <h1 class="page-title">Agenda tu corte sin llamadas ni filas.</h1>
+          </div>
+          <p>Formulario de mockup para mostrar selección de servicio, barbero, fecha y hora con confirmación inmediata.</p>
+        </div>
+
+        <div class="booking-layout">
+          <form class="form-panel reveal" data-mock-form data-success="Turno barber creado en este mockup.">
+            <div class="form-grid">
+              <div class="field">
+                <label for="barber-nombre">Nombre</label>
+                <input id="barber-nombre" name="nombre" value="Andrés Gómez">
+              </div>
+              <div class="field">
+                <label for="barber-telefono">Teléfono</label>
+                <input id="barber-telefono" name="telefono" value="+57 312 444 2200">
+              </div>
+              <div class="field">
+                <label for="barber-servicio">Servicio</label>
+                <select id="barber-servicio" name="servicio">
+                  <option>Ritual completo</option>
+                  <option>Corte firma</option>
+                  <option>Barba premium</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="barbero">Barbero</label>
+                <select id="barbero" name="barbero">
+                  <option>Mateo C.</option>
+                  <option>Sebastián R.</option>
+                  <option>Cualquier barbero disponible</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="barber-fecha">Fecha</label>
+                <input id="barber-fecha" name="fecha" type="date" value="2026-05-18">
+              </div>
+              <div class="field">
+                <label for="barber-hora">Hora</label>
+                <select id="barber-hora" name="hora">
+                  <option>11:30 a.m.</option>
+                  <option>3:00 p.m.</option>
+                  <option>6:30 p.m.</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="barber-notas">Notas</label>
+                <textarea id="barber-notas" name="notas">Quiero mantener el largo arriba y perfilar la barba.</textarea>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="submit"><i data-lucide="check-circle-2" class="icon"></i> Confirmar turno</button>
+              <a class="btn" href="04-barber-contacto.html"><i data-lucide="message-circle" class="icon"></i> Preguntar por WhatsApp</a>
+            </div>
+          </form>
+
+          <aside class="checkout-panel reveal">
+            <h3>Turno seleccionado</h3>
+            <p>Resumen visual para que el cliente sienta control antes de confirmar.</p>
+            <div class="summary-list">
+              <div class="summary-row"><span>Servicio</span><strong>Ritual completo</strong></div>
+              <div class="summary-row"><span>Barbero</span><strong>Mateo C.</strong></div>
+              <div class="summary-row"><span>Fecha</span><strong>18 mayo</strong></div>
+              <div class="summary-row"><span>Hora</span><strong>11:30 a.m.</strong></div>
+              <div class="summary-row"><span>Valor</span><strong>$78.000</strong></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

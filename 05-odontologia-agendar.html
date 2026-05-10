@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Sonría | Agendar cita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dental" data-page="dental-agendar">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="05-odontologia-home.html" aria-label="Clínica Sonría">
+        <span class="brand-mark"><i data-lucide="smile" class="icon"></i></span>
+        <span class="brand-name">Clínica Sonría <small>Odontología integral</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Odontología">
+        <a href="05-odontologia-home.html" data-nav="dental-home">Inicio</a>
+        <a href="05-odontologia-agendar.html" data-nav="dental-agendar">Agendar cita</a>
+        <a href="05-odontologia-contacto.html" data-nav="dental-contacto">Contacto</a>
+        <a class="btn btn-primary nav-action" href="05-odontologia-agendar.html">
+          <i data-lucide="calendar-plus" class="icon"></i> Agendar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="tagline"><i data-lucide="calendar-heart" class="icon"></i> Agenda dental</div>
+            <h1 class="page-title">Agenda una valoración clara y sin estrés.</h1>
+          </div>
+          <p>Formulario de ejemplo para una clínica dental: motivo de consulta, especialista, fecha, hora y comentarios del paciente.</p>
+        </div>
+
+        <div class="booking-layout">
+          <form class="form-panel reveal" data-mock-form data-success="Cita dental creada en este mockup.">
+            <div class="form-grid">
+              <div class="field">
+                <label for="dental-nombre">Nombre</label>
+                <input id="dental-nombre" name="nombre" value="Paula Herrera">
+              </div>
+              <div class="field">
+                <label for="dental-telefono">Teléfono</label>
+                <input id="dental-telefono" name="telefono" value="+57 315 888 2244">
+              </div>
+              <div class="field">
+                <label for="dental-servicio">Motivo</label>
+                <select id="dental-servicio" name="servicio">
+                  <option>Valoración inicial</option>
+                  <option>Limpieza profunda</option>
+                  <option>Diseño de sonrisa</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="odontologo">Profesional</label>
+                <select id="odontologo" name="odontologo">
+                  <option>Dra. Valentina Ruiz</option>
+                  <option>Dr. Nicolás Arias</option>
+                  <option>Cualquier profesional disponible</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="dental-fecha">Fecha</label>
+                <input id="dental-fecha" name="fecha" type="date" value="2026-05-19">
+              </div>
+              <div class="field">
+                <label for="dental-hora">Hora</label>
+                <select id="dental-hora" name="hora">
+                  <option>9:00 a.m.</option>
+                  <option>1:30 p.m.</option>
+                  <option>4:00 p.m.</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="dental-notas">Comentarios</label>
+                <textarea id="dental-notas" name="notas">Quiero revisar sensibilidad dental y opciones de limpieza.</textarea>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="submit"><i data-lucide="check-circle-2" class="icon"></i> Confirmar cita</button>
+              <a class="btn" href="05-odontologia-contacto.html"><i data-lucide="message-circle" class="icon"></i> Contactar clínica</a>
+            </div>
+          </form>
+
+          <aside class="checkout-panel reveal">
+            <h3>Resumen clínico</h3>
+            <p>Un cierre claro reduce dudas antes de que el paciente confirme.</p>
+            <div class="summary-list">
+              <div class="summary-row"><span>Motivo</span><strong>Valoración inicial</strong></div>
+              <div class="summary-row"><span>Profesional</span><strong>Dra. Valentina</strong></div>
+              <div class="summary-row"><span>Fecha</span><strong>19 mayo</strong></div>
+              <div class="summary-row"><span>Hora</span><strong>9:00 a.m.</strong></div>
+              <div class="summary-row"><span>Valor</span><strong>$80.000</strong></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>
