@@ -1006,6 +1006,65 @@ textarea {
   transition: transform 320ms ease;
 }
 
+@media (min-width: 981px) {
+  .hero {
+    padding: 58px 0 60px;
+  }
+
+  .hero-grid {
+    gap: 56px;
+  }
+
+  .hero-title {
+    font-size: clamp(46px, 4.25vw, 58px);
+  }
+
+  .media-frame img {
+    min-height: 420px;
+    aspect-ratio: 1.14 / 1;
+  }
+
+  .index-page .hero {
+    padding-top: 54px;
+  }
+
+  .index-page .hero-title {
+    max-width: 980px;
+    font-size: clamp(44px, 4.1vw, 56px);
+  }
+
+  .index-page .hero-text {
+    max-width: 760px;
+  }
+
+  .index-page .showcase-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .index-page .showcase-card {
+    min-height: 318px;
+  }
+
+  .index-page .showcase-content {
+    padding: 20px;
+  }
+
+  .index-page .showcase-content h2 {
+    font-size: 24px;
+  }
+
+  .index-page .showcase-content p {
+    font-size: 14px;
+  }
+}
+
+body.dental .hero .media-frame img,
+body.dental .media-frame.square img {
+  object-position: center;
+}
+
 .showcase-card:hover img {
   transform: scale(1.045);
 }
