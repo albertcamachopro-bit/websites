@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaStore | Carrito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="shop" data-page="shop-carrito">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="03-tienda-home.html" aria-label="NovaStore">
+        <span class="brand-mark"><i data-lucide="shopping-bag" class="icon"></i></span>
+        <span class="brand-name">NovaStore <small>Compra urbana</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Tienda">
+        <a href="03-tienda-auth.html" data-nav="shop-auth">Acceso</a>
+        <a href="03-tienda-home.html" data-nav="shop-home">Home</a>
+        <a href="03-tienda-productos.html" data-nav="shop-productos">Tienda</a>
+        <a href="03-tienda-carrito.html" data-nav="shop-carrito">Carrito (<span class="cart-count">2</span>)</a>
+        <a href="03-tienda-contacto.html" data-nav="shop-contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="tagline"><i data-lucide="shopping-cart" class="icon"></i> Carrito de compras</div>
+            <h1 class="page-title">Resumen visual antes de pagar.</h1>
+          </div>
+          <p>El checkout es una pantalla de muestra: ideal para explicar totales, productos, envío y llamada a la acción.</p>
+        </div>
+
+        <div class="cart-layout">
+          <section class="card reveal">
+            <div class="cart-item">
+              <img src="producto-tenis.jpg" alt="Tenis Pulse Red">
+              <div>
+                <h3>Tenis Pulse Red</h3>
+                <p>Talla 40 · Rojo</p>
+                <span class="quantity">- 1 +</span>
+              </div>
+              <strong class="price">$289.000</strong>
+            </div>
+            <div class="cart-item">
+              <img src="producto-audifonos.jpg" alt="Audífonos AirBeat">
+              <div>
+                <h3>Audífonos AirBeat</h3>
+                <p>Color negro · Inalámbricos</p>
+                <span class="quantity">- 1 +</span>
+              </div>
+              <strong class="price">$199.000</strong>
+            </div>
+          </section>
+
+          <aside class="checkout-panel reveal">
+            <h3>Total de compra</h3>
+            <p>Valores de ejemplo para mostrar la experiencia de carrito.</p>
+            <div class="summary-list">
+              <div class="total-row"><span>Subtotal</span><strong>$488.000</strong></div>
+              <div class="total-row"><span>Envío</span><strong>$12.000</strong></div>
+              <div class="total-row"><span>Descuento</span><strong>-$20.000</strong></div>
+              <div class="total-row"><span>Total</span><strong>$480.000</strong></div>
+            </div>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="button" data-toast="Checkout simulado en este mockup."><i data-lucide="credit-card" class="icon"></i> Finalizar compra</button>
+              <a class="btn" href="03-tienda-productos.html"><i data-lucide="arrow-left" class="icon"></i> Seguir comprando</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

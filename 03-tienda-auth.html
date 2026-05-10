@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaStore | Acceso</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="shop" data-page="shop-auth">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="03-tienda-home.html" aria-label="NovaStore">
+        <span class="brand-mark"><i data-lucide="shopping-bag" class="icon"></i></span>
+        <span class="brand-name">NovaStore <small>Compra urbana</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Tienda">
+        <a href="03-tienda-auth.html" data-nav="shop-auth">Acceso</a>
+        <a href="03-tienda-home.html" data-nav="shop-home">Home</a>
+        <a href="03-tienda-productos.html" data-nav="shop-productos">Tienda</a>
+        <a href="03-tienda-carrito.html" data-nav="shop-carrito">Carrito (<span class="cart-count">2</span>)</a>
+        <a href="03-tienda-contacto.html" data-nav="shop-contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container auth-shell">
+      <div class="media-frame auth-visual reveal">
+        <img src="tienda-hero.jpg" alt="Escena moderna de compras">
+        <div class="media-note">
+          <span><strong>Nova Members</strong> Acceso a lanzamientos y descuentos</span>
+          <i data-lucide="badge-percent" class="icon"></i>
+        </div>
+      </div>
+      <form class="auth-panel reveal" data-mock-form data-success="Ingreso simulado en este mockup.">
+        <h1>Entra a tu cuenta.</h1>
+        <p>Una hoja de autenticación para mostrar login, registro y acceso rápido antes de comprar.</p>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="auth-email">Correo</label>
+            <input id="auth-email" type="email" value="cliente@correo.com">
+          </div>
+          <div class="field full">
+            <label for="auth-pass">Contraseña</label>
+            <input id="auth-pass" type="password" value="novastore">
+          </div>
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="submit"><i data-lucide="log-in" class="icon"></i> Iniciar sesión</button>
+          <a class="btn" href="03-tienda-home.html"><i data-lucide="user-plus" class="icon"></i> Crear cuenta</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

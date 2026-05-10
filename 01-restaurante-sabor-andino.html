@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor Andino | Restaurante</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="restaurant" data-page="restaurante">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="01-restaurante-sabor-andino.html" aria-label="Sabor Andino">
+        <span class="brand-mark"><i data-lucide="utensils" class="icon"></i></span>
+        <span class="brand-name">Sabor Andino <small>Cocina de temporada</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Restaurante">
+        <a href="#menu">Menú</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn-primary nav-action" href="https://wa.me/573001112233" target="_blank" rel="noreferrer">
+          <i data-lucide="message-circle" class="icon"></i> WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy-block reveal">
+          <div class="tagline"><i data-lucide="flame" class="icon"></i> Carta breve, cocina honesta</div>
+          <h1 class="hero-title">Un rincón cálido para almorzar, brindar y volver.</h1>
+          <p class="hero-text">Sabor Andino mezcla recetas de casa, ingredientes frescos y un servicio cercano. Este mockup funciona como una hoja única con menú, QR, mapa y contacto directo.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu"><i data-lucide="book-open" class="icon"></i> Ver menú</a>
+            <a class="btn" href="#ubicacion"><i data-lucide="map-pin" class="icon"></i> Cómo llegar</a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>12</strong><span>platos de autor</span></div>
+            <div class="proof-item"><strong>8:00</strong><span>cierre cocina</span></div>
+            <div class="proof-item"><strong>4.8</strong><span>reseñas locales</span></div>
+          </div>
+        </div>
+        <div class="media-frame float-soft reveal">
+          <img src="restaurante-hero.jpg" alt="Mesa servida en restaurante acogedor">
+          <div class="media-note">
+            <span><strong>Reserva sugerida</strong> Viernes y sábado</span>
+            <i data-lucide="calendar-check" class="icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight" id="menu">
+      <div class="container single-sheet">
+        <div class="card reveal">
+          <div class="section-head">
+            <div>
+              <div class="tagline"><i data-lucide="chef-hat" class="icon"></i> Menú destacado</div>
+              <h2>Platos para mostrar una carta clara y elegante.</h2>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div><strong>Trucha dorada con hierbas</strong><p>Filete sellado, papas criollas y ensalada de la casa.</p></div>
+              <span class="price">$38.000</span>
+            </div>
+            <div class="menu-item">
+              <div><strong>Risotto de setas andinas</strong><p>Arroz cremoso, queso maduro y aceite de albahaca.</p></div>
+              <span class="price">$34.000</span>
+            </div>
+            <div class="menu-item">
+              <div><strong>Lomo en reducción de panela</strong><p>Corte jugoso, puré rústico y vegetales al carbón.</p></div>
+              <span class="price">$46.000</span>
+            </div>
+            <div class="menu-item">
+              <div><strong>Torta tibia de cacao</strong><p>Postre de la casa con helado artesanal de vainilla.</p></div>
+              <span class="price">$18.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sheet-side">
+          <div class="card qr-contact reveal" id="contacto">
+            <svg class="qr-code" viewBox="0 0 29 29" aria-label="Código QR de menú digital">
+              <rect width="29" height="29" fill="white"></rect>
+              <path fill="currentColor" d="M2 2h7v7H2V2Zm2 2v3h3V4H4Zm16-2h7v7h-7V2Zm2 2v3h3V4h-3ZM2 20h7v7H2v-7Zm2 2v3h3v-3H4Zm10-18h2v2h-2V4Zm3 0h1v4h-3V7h2V4Zm-6 5h2v3h-2V9Zm5 1h2v2h-2v-2Zm4 2h2v2h-2v-2Zm4 0h3v2h-1v2h-2v-4Zm-13 3h2v2h-2v-2Zm4 0h1v3h2v2h-4v-5Zm6 1h2v3h-2v-3Zm4 2h2v2h-2v-2Zm-14 3h3v2h-3v-2Zm5 1h2v2h-2v-2Zm4 0h1v5h-2v-3h-1v-2h2Zm4 1h3v4h-2v-2h-1v-2Zm-10 3h2v2h-2v-2Z"></path>
+            </svg>
+            <div>
+              <h3>Escanea el QR</h3>
+              <p>Abre el menú digital, promociones del día y reserva de mesa.</p>
+              <a class="btn btn-primary" href="https://wa.me/573001112233" target="_blank" rel="noreferrer">
+                <i data-lucide="message-circle" class="icon"></i> Contáctame por WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="map-mock reveal" id="ubicacion" aria-label="Mapa mockup de ubicación">
+            <span class="map-road one"></span>
+            <span class="map-road two"></span>
+            <span class="map-road three"></span>
+            <span class="map-pin"><i data-lucide="map-pin" class="icon"></i></span>
+            <span class="map-label">Calle 12 #8-40, Centro Histórico, Bogotá</span>
+          </div>
+
+          <div class="card reveal">
+            <h3>Información de contacto</h3>
+            <ul class="stack-list">
+              <li><i data-lucide="phone" class="icon"></i> +57 300 111 2233</li>
+              <li><i data-lucide="clock" class="icon"></i> Lun a sáb, 12:00 p.m. - 10:00 p.m.</li>
+              <li><i data-lucide="mail" class="icon"></i> reservas@saborandino.co</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaStore | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="shop" data-page="shop-home">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="03-tienda-home.html" aria-label="NovaStore">
+        <span class="brand-mark"><i data-lucide="shopping-bag" class="icon"></i></span>
+        <span class="brand-name">NovaStore <small>Compra urbana</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Tienda">
+        <a href="03-tienda-auth.html" data-nav="shop-auth">Acceso</a>
+        <a href="03-tienda-home.html" data-nav="shop-home">Home</a>
+        <a href="03-tienda-productos.html" data-nav="shop-productos">Tienda</a>
+        <a href="03-tienda-carrito.html" data-nav="shop-carrito">Carrito (<span class="cart-count">2</span>)</a>
+        <a href="03-tienda-contacto.html" data-nav="shop-contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy-block reveal">
+          <div class="tagline"><i data-lucide="zap" class="icon"></i> Tienda online de mockup</div>
+          <h1 class="hero-title">NovaStore reúne accesorios, tecnología y estilo para compras rápidas.</h1>
+          <p class="hero-text">Este ejemplo tiene cinco hojas navegables: autenticación, home, tienda con productos, carrito de compras y contacto. La experiencia es visual y lista para presentar.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="03-tienda-productos.html"><i data-lucide="shopping-cart" class="icon"></i> Comprar ahora</a>
+            <a class="btn" href="03-tienda-auth.html"><i data-lucide="user" class="icon"></i> Acceder</a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>24h</strong><span>despacho local</span></div>
+            <div class="proof-item"><strong>4</strong><span>categorías demo</span></div>
+            <div class="proof-item"><strong>2</strong><span>items en carrito</span></div>
+          </div>
+        </div>
+        <div class="media-frame reveal">
+          <img src="tienda-hero.jpg" alt="Bolsas de compra con estilo moderno">
+          <div class="media-note">
+            <span><strong>Drop de temporada</strong> Accesorios urbanos y gadgets</span>
+            <i data-lucide="package-check" class="icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Un home comercial para guiar al cliente hacia la tienda.</h2>
+          <p>Bloques breves para categorías, beneficios y productos destacados sin convertir el sitio en una landing extensa.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card reveal">
+            <h3>Calzado</h3>
+            <p>Tenis y básicos urbanos con fotos de producto.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Relojes</h3>
+            <p>Accesorios premium para vitrinas online.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Audio</h3>
+            <p>Gadgets de uso diario para mostrar variedad.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Gafas</h3>
+            <p>Productos visuales para probar una grilla comercial.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

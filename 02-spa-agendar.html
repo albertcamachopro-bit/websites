@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Nativa SPA | Agendar cita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="spa" data-page="spa-agendar">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="02-spa-home.html" aria-label="Aura Nativa SPA">
+        <span class="brand-mark"><i data-lucide="flower-2" class="icon"></i></span>
+        <span class="brand-name">Aura Nativa <small>SPA urbano</small></span>
+      </a>
+      <nav class="nav-links" aria-label="SPA">
+        <a href="02-spa-home.html" data-nav="spa-home">Inicio</a>
+        <a href="02-spa-agendar.html" data-nav="spa-agendar">Agendar cita</a>
+        <a href="02-spa-contacto.html" data-nav="spa-contacto">Contacto</a>
+        <a class="btn btn-primary nav-action" href="02-spa-agendar.html">
+          <i data-lucide="calendar-plus" class="icon"></i> Reservar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="tagline"><i data-lucide="calendar-heart" class="icon"></i> Agenda de citas</div>
+            <h1 class="page-title">Reserva una experiencia de bienestar.</h1>
+          </div>
+          <p>Formulario de ejemplo para mostrar cómo se vería la reserva antes de conectar pagos, calendario real o WhatsApp Business.</p>
+        </div>
+
+        <div class="booking-layout">
+          <form class="form-panel reveal" data-mock-form data-success="Pre-reserva creada en este mockup.">
+            <div class="form-grid">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" value="Laura Martínez">
+              </div>
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" name="telefono" value="+57 310 555 8899">
+              </div>
+              <div class="field">
+                <label for="servicio">Tratamiento</label>
+                <select id="servicio" name="servicio">
+                  <option>Masaje relajante</option>
+                  <option>Facial hidratante</option>
+                  <option>Plan pareja</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="profesional">Profesional</label>
+                <select id="profesional" name="profesional">
+                  <option>Cualquier terapeuta disponible</option>
+                  <option>Camila R.</option>
+                  <option>Andrea P.</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="fecha">Fecha</label>
+                <input id="fecha" name="fecha" type="date" value="2026-05-14">
+              </div>
+              <div class="field">
+                <label for="hora">Hora</label>
+                <select id="hora" name="hora">
+                  <option>10:00 a.m.</option>
+                  <option>2:30 p.m.</option>
+                  <option>5:00 p.m.</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="notas">Notas</label>
+                <textarea id="notas" name="notas">Prefiero una sesión suave, enfocada en cuello y espalda.</textarea>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="submit"><i data-lucide="check-circle-2" class="icon"></i> Confirmar pre-reserva</button>
+              <a class="btn" href="02-spa-contacto.html"><i data-lucide="message-circle" class="icon"></i> Consultar disponibilidad</a>
+            </div>
+          </form>
+
+          <aside class="checkout-panel reveal">
+            <h3>Resumen de cita</h3>
+            <p>Mockup visual del estado que podría ver una persona antes de confirmar.</p>
+            <div class="summary-list">
+              <div class="summary-row"><span>Servicio</span><strong>Masaje relajante</strong></div>
+              <div class="summary-row"><span>Duración</span><strong>60 min</strong></div>
+              <div class="summary-row"><span>Fecha</span><strong>14 mayo</strong></div>
+              <div class="summary-row"><span>Hora</span><strong>10:00 a.m.</strong></div>
+              <div class="summary-row"><span>Valor</span><strong>$120.000</strong></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

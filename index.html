@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mockups web para clientes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index-page" data-page="showcase">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Mockups web">
+        <span class="brand-mark"><i data-lucide="layout-template" class="icon"></i></span>
+        <span class="brand-name">Mockups Web <small>Demos listos para presentar</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Demos">
+        <a href="01-restaurante-sabor-andino.html">Restaurante</a>
+        <a href="02-spa-home.html">SPA</a>
+        <a href="03-tienda-home.html">Tienda online</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="tagline"><i data-lucide="sparkles" class="icon"></i> Presentación comercial</div>
+        <h1 class="hero-title">Tres mockups navegables para mostrar distintos tipos de páginas web.</h1>
+        <p class="hero-text">Cada demo está hecho en HTML, CSS y JavaScript estático. Sirven para abrirlos, enseñarlos a clientes y explicar cómo se vería una web sencilla, una web de servicios y una tienda online.</p>
+
+        <div class="showcase-grid">
+          <a class="showcase-card reveal" href="01-restaurante-sabor-andino.html">
+            <img src="restaurante-hero.jpg" alt="Interior de restaurante cálido">
+            <span class="showcase-content">
+              <h2>Restaurante</h2>
+              <p>Una sola hoja con menú, QR, mapa, horarios y contacto por WhatsApp.</p>
+              <span class="btn btn-primary">Abrir demo <i data-lucide="arrow-right" class="icon"></i></span>
+            </span>
+          </a>
+
+          <a class="showcase-card reveal" href="02-spa-home.html">
+            <img src="spa-hero.jpg" alt="Ambiente de spa con camilla y luz suave">
+            <span class="showcase-content">
+              <h2>SPA</h2>
+              <p>Tres hojas: inicio, agenda de citas y contacto especializado.</p>
+              <span class="btn btn-primary">Abrir demo <i data-lucide="arrow-right" class="icon"></i></span>
+            </span>
+          </a>
+
+          <a class="showcase-card reveal" href="03-tienda-home.html">
+            <img src="tienda-hero.jpg" alt="Bolsas de compra en tienda moderna">
+            <span class="showcase-content">
+              <h2>Tienda online</h2>
+              <p>Cinco hojas: autenticación, home, productos, carrito y contacto.</p>
+              <span class="btn btn-primary">Abrir demo <i data-lucide="arrow-right" class="icon"></i></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

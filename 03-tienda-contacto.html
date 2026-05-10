@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaStore | Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="shop" data-page="shop-contacto">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="03-tienda-home.html" aria-label="NovaStore">
+        <span class="brand-mark"><i data-lucide="shopping-bag" class="icon"></i></span>
+        <span class="brand-name">NovaStore <small>Compra urbana</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Tienda">
+        <a href="03-tienda-auth.html" data-nav="shop-auth">Acceso</a>
+        <a href="03-tienda-home.html" data-nav="shop-home">Home</a>
+        <a href="03-tienda-productos.html" data-nav="shop-productos">Tienda</a>
+        <a href="03-tienda-carrito.html" data-nav="shop-carrito">Carrito (<span class="cart-count">2</span>)</a>
+        <a href="03-tienda-contacto.html" data-nav="shop-contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="tagline"><i data-lucide="headphones" class="icon"></i> Atención al cliente</div>
+            <h1 class="page-title">Una hoja de contacto para soporte, pedidos y alianzas.</h1>
+          </div>
+          <p>Este cierre de tienda online combina formulario, datos comerciales y mapa para completar el flujo de compra.</p>
+        </div>
+
+        <div class="contact-grid">
+          <section class="form-panel reveal">
+            <form data-mock-form data-success="Consulta enviada en este mockup.">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="shop-name">Nombre</label>
+                  <input id="shop-name" value="Daniel Rojas">
+                </div>
+                <div class="field">
+                  <label for="shop-email">Correo</label>
+                  <input id="shop-email" type="email" value="daniel@email.com">
+                </div>
+                <div class="field full">
+                  <label for="shop-topic">Motivo</label>
+                  <select id="shop-topic">
+                    <option>Estado de pedido</option>
+                    <option>Cambios y devoluciones</option>
+                    <option>Ventas mayoristas</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="shop-message">Mensaje</label>
+                  <textarea id="shop-message">Hola, quiero saber si el reloj Metro está disponible para envío a Medellín.</textarea>
+                </div>
+              </div>
+              <div class="hero-actions">
+                <button class="btn btn-primary" type="submit"><i data-lucide="send" class="icon"></i> Enviar consulta</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="contact-panel reveal">
+            <h3>NovaStore Colombia</h3>
+            <p>Canales de ejemplo para pedidos, soporte postventa y compras corporativas.</p>
+            <div class="contact-rows">
+              <div class="contact-row"><i data-lucide="map-pin" class="icon"></i><span><strong>Showroom</strong><span>Avenida 19 #104-62, Bogotá</span></span></div>
+              <div class="contact-row"><i data-lucide="phone" class="icon"></i><span><strong>WhatsApp</strong><span>+57 302 777 9090</span></span></div>
+              <div class="contact-row"><i data-lucide="mail" class="icon"></i><span><strong>Correo</strong><span>ventas@novastore.co</span></span></div>
+              <div class="contact-row"><i data-lucide="truck" class="icon"></i><span><strong>Despachos</strong><span>Lun a vie, 8:00 a.m. - 5:00 p.m.</span></span></div>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://wa.me/573027779090" target="_blank" rel="noreferrer"><i data-lucide="message-circle" class="icon"></i> WhatsApp</a>
+              <a class="btn" href="03-tienda-productos.html"><i data-lucide="store" class="icon"></i> Volver a tienda</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="map-mock reveal" style="margin-top:24px" aria-label="Mapa mockup de ubicación de NovaStore">
+          <span class="map-road one"></span>
+          <span class="map-road two"></span>
+          <span class="map-road three"></span>
+          <span class="map-pin"><i data-lucide="map-pin" class="icon"></i></span>
+          <span class="map-label">Avenida 19 #104-62, Bogotá</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

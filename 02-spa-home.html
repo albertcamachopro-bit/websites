@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Nativa SPA | Inicio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="spa" data-page="spa-home">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="02-spa-home.html" aria-label="Aura Nativa SPA">
+        <span class="brand-mark"><i data-lucide="flower-2" class="icon"></i></span>
+        <span class="brand-name">Aura Nativa <small>SPA urbano</small></span>
+      </a>
+      <nav class="nav-links" aria-label="SPA">
+        <a href="02-spa-home.html" data-nav="spa-home">Inicio</a>
+        <a href="02-spa-agendar.html" data-nav="spa-agendar">Agendar cita</a>
+        <a href="02-spa-contacto.html" data-nav="spa-contacto">Contacto</a>
+        <a class="btn btn-primary nav-action" href="02-spa-agendar.html">
+          <i data-lucide="calendar-plus" class="icon"></i> Reservar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid reverse">
+        <div class="hero-copy-block reveal">
+          <div class="tagline"><i data-lucide="leaf" class="icon"></i> Bienestar con agenda clara</div>
+          <h1 class="hero-title">Un SPA sereno para desconectar sin salir de la ciudad.</h1>
+          <p class="hero-text">Aura Nativa es una web de servicios con tres hojas: inicio, agenda de citas y contacto. Perfecta para mostrar reservas, horarios, tratamientos y canales de atención.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="02-spa-agendar.html"><i data-lucide="calendar-days" class="icon"></i> Agendar cita</a>
+            <a class="btn" href="02-spa-contacto.html"><i data-lucide="phone-call" class="icon"></i> Hablar con recepción</a>
+          </div>
+        </div>
+        <div class="media-frame reveal">
+          <img src="spa-hero.jpg" alt="Sala de spa con ambiente relajante">
+          <div class="media-note">
+            <span><strong>Ritual recomendado</strong> Masaje + facial hidratante</span>
+            <i data-lucide="sparkle" class="icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Tratamientos pensados para vender servicios sin saturar la página.</h2>
+          <p>La estructura mantiene el contenido simple, visual y directo para que el cliente entienda rápido qué puede reservar.</p>
+        </div>
+        <div class="grid-3">
+          <article class="service-card reveal">
+            <div>
+              <span class="service-icon"><i data-lucide="waves" class="icon"></i></span>
+              <h3>Masaje relajante</h3>
+              <p>Sesión corporal de 60 minutos con aceites esenciales y música ambiental.</p>
+            </div>
+            <div class="meta"><span>60 min</span><strong>$120.000</strong></div>
+          </article>
+          <article class="service-card reveal">
+            <div>
+              <span class="service-icon"><i data-lucide="droplets" class="icon"></i></span>
+              <h3>Facial hidratante</h3>
+              <p>Limpieza profunda, mascarilla calmante y masaje facial con piedras frías.</p>
+            </div>
+            <div class="meta"><span>45 min</span><strong>$95.000</strong></div>
+          </article>
+          <article class="service-card reveal">
+            <div>
+              <span class="service-icon"><i data-lucide="heart" class="icon"></i></span>
+              <h3>Plan pareja</h3>
+              <p>Ritual doble con masaje, aromaterapia y bebida natural de bienvenida.</p>
+            </div>
+            <div class="meta"><span>90 min</span><strong>$240.000</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container hero-grid">
+        <div class="media-frame square reveal">
+          <img src="spa-tratamiento.jpg" alt="Tratamiento de masaje en camilla">
+        </div>
+        <div class="reveal">
+          <div class="tagline"><i data-lucide="clipboard-check" class="icon"></i> Flujo comercial</div>
+          <h2 class="page-title">Del interés a la cita en dos clics.</h2>
+          <p class="lead">La página de agenda simula selección de tratamiento, fecha, hora y datos básicos. Sirve para explicar cómo una web puede convertir visitas en reservas.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="02-spa-agendar.html"><i data-lucide="arrow-right" class="icon"></i> Ver agenda</a>
+            <a class="btn btn-ghost" href="02-spa-contacto.html"><i data-lucide="map-pin" class="icon"></i> Ver contacto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>

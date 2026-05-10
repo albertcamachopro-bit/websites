@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaStore | Tienda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="shop" data-page="shop-productos">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="03-tienda-home.html" aria-label="NovaStore">
+        <span class="brand-mark"><i data-lucide="shopping-bag" class="icon"></i></span>
+        <span class="brand-name">NovaStore <small>Compra urbana</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Tienda">
+        <a href="03-tienda-auth.html" data-nav="shop-auth">Acceso</a>
+        <a href="03-tienda-home.html" data-nav="shop-home">Home</a>
+        <a href="03-tienda-productos.html" data-nav="shop-productos">Tienda</a>
+        <a href="03-tienda-carrito.html" data-nav="shop-carrito">Carrito (<span class="cart-count">2</span>)</a>
+        <a href="03-tienda-contacto.html" data-nav="shop-contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="tagline"><i data-lucide="store" class="icon"></i> Catálogo visual</div>
+            <h1 class="page-title">Productos listos para mostrar una tienda online.</h1>
+          </div>
+          <p>Los botones agregan unidades al contador de carrito como interacción de maqueta, sin conexión a pagos reales.</p>
+        </div>
+
+        <div class="grid-4">
+          <article class="product-card reveal">
+            <img src="producto-tenis.jpg" alt="Tenis deportivos rojos">
+            <div class="product-body">
+              <h3>Tenis Pulse Red</h3>
+              <p>Calzado ligero para looks diarios y vitrinas de temporada.</p>
+              <div class="product-meta"><strong>$289.000</strong><button class="btn" type="button" data-add-cart><i data-lucide="plus" class="icon"></i> Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="producto-reloj.jpg" alt="Reloj moderno de pulso">
+            <div class="product-body">
+              <h3>Reloj Metro</h3>
+              <p>Diseño minimalista con correa de cuero y caja metálica.</p>
+              <div class="product-meta"><strong>$420.000</strong><button class="btn" type="button" data-add-cart><i data-lucide="plus" class="icon"></i> Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="producto-audifonos.jpg" alt="Audífonos sobre fondo amarillo">
+            <div class="product-body">
+              <h3>Audífonos AirBeat</h3>
+              <p>Audio inalámbrico con cancelación pasiva y estuche compacto.</p>
+              <div class="product-meta"><strong>$199.000</strong><button class="btn" type="button" data-add-cart><i data-lucide="plus" class="icon"></i> Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="producto-gafas.jpg" alt="Gafas de sol modernas">
+            <div class="product-body">
+              <h3>Gafas Solar C1</h3>
+              <p>Montura liviana para un catálogo de accesorios con estilo.</p>
+              <div class="product-meta"><strong>$145.000</strong><button class="btn" type="button" data-add-cart><i data-lucide="plus" class="icon"></i> Agregar</button></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="03-tienda-carrito.html"><i data-lucide="shopping-cart" class="icon"></i> Ver carrito</a>
+          <a class="btn" href="03-tienda-contacto.html"><i data-lucide="message-square" class="icon"></i> Preguntar por un producto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="mockup.js"></script>
+</body>
+</html>
